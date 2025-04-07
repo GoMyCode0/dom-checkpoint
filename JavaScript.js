@@ -5,6 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
   
     const totalDisplay = document.getElementById("total-amount");
   
+    //*this for calculating
     function calculateTotal() {
       const productCards = document.querySelectorAll(".product-card");
       let total = 0;
@@ -17,6 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
   
       totalDisplay.textContent = `$${total.toFixed(2)}`;
     }
+
+       //*this for adding
   
     plusBtns.forEach(btn => {
       btn.addEventListener("click", () => {
@@ -26,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   
+       //*this is for heart emoji
     minusBtns.forEach(btn => {
       btn.addEventListener("click", () => {
         const qtyEl = btn.parentElement.querySelector(".qty");
